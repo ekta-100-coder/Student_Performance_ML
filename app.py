@@ -40,7 +40,7 @@ uploaded_file = st.sidebar.file_uploader("Upload CSV", type=["csv"])
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
 else:
-    df = pd.read_csv(r"C:\ANN_ML\student_performance_dataset_v2.csv")
+    df = pd.read_csv("student_performance_dataset_v2.csv")
 
 # ---------------------------
 # TABS
